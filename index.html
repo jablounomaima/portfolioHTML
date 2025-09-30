@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Étudiant en Génie Logiciel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre latérale -->
+    <aside class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#accueil">🏠 Accueil</a></li>
+            <li><a href="#profil">👨‍💻 Profil Technique</a></li>
+            <li><a href="#competences">🛠️ Stack & Compétences</a></li>
+            <li><a href="#realisations">📊 Réalisations</a></li>
+            <li><a href="#contact">📬 Contact</a></li>
+            <li><a href="#cv">📄 Télécharger mon CV</a></li>
+        </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Accueil -->
+        <section id="accueil">
+            <h1>🚀 Portfolio - Ingénieur en Génie Logiciel</h1>
+            <p>Étudiant en Génie Logiciel | Développeur Full-Stack | Junior Data Engineer</p>
+        </section>
+
+        <!-- Profil Technique -->
+        <section id="profil">
+            <h2>Profil Technique</h2>
+            <ul>
+                <li>Conception et développement d’applications <strong>Web</strong> avec Django (Python) et PHP.</li>
+                <li>Déploiement et administration sur systèmes <strong>Linux (Ubuntu, Kali Linux)</strong>.</li>
+                <li>Intégration de modèles d’<strong>IA légère</strong> pour la prévision et l’analyse décisionnelle.</li>
+            </ul>
+        </section>
+
+        <!-- Stack & Compétences -->
+        <section id="competences">
+            <h2>🛠️ Stack & Compétences</h2>
+            <div class="skills">
+                <div>
+                    <h3>Langages de programmation</h3>
+                    <p>Python | PHP | JavaScript</p>
+                </div>
+                <div>
+                    <h3>Bases de données & Requêtes</h3>
+                    <p>SQL (MySQL, PostgreSQL, SQLite)</p>
+                </div>
+                <div>
+                    <h3>Frameworks & Bibliothèques</h3>
+                    <p>Django | Flask | Streamlit | Bootstrap</p>
+                </div>
+                <div>
+                    <h3>Data Science & IA</h3>
+                    <p>Pandas | NumPy | Scikit-learn | Prophet | Visualisation (Matplotlib, Seaborn)</p>
+                </div>
+                <div>
+                    <h3>DevOps & Systèmes</h3>
+                    <p>Linux (Ubuntu, Kali) | Docker | Git/GitHub | CI/CD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Réalisations -->
+        <section id="realisations">
+            <h2>📊 Réalisations</h2>
+
+            <!-- Projet 1 : Système de Réservation pour Clinique Vétérinaire -->
+            <div class="project">
+                <h3>🐾 Système de Réservation en Ligne - Clinique Vétérinaire</h3>
+                <p>Application web complète permettant aux clients de :</p>
+                <ul>
+                    <li>Créer un compte personnel sécurisé.</li>
+                    <li>Enregistrer leurs animaux (nom, espèce, race, date de naissance).</li>
+                    <li>Prendre rendez-vous en ligne (consultations, vaccinations, etc.).</li>
+                    <li>Consulter l’historique de leurs rendez-vous.</li>
+                    <li>Télécharger le dossier médical de leur animal au format PDF.</li>
+                    <li>Gérer leurs demandes (annulation, modification).</li>
+                </ul>
+                <p><strong>Interface d’administration pour le personnel vétérinaire :</strong></p>
+                <ul>
+                    <li>Valider ou refuser les rendez-vous.</li>
+                    <li>Consulter toutes les fiches animales.</li>
+                    <li>Filtrer les RDV par statut, date ou utilisateur.</li>
+                    <li>Gérer les comptes utilisateurs.</li>
+                </ul>
+                <p><strong>Technologies utilisées :</strong></p>
+                <p>
+                    Langage : Python 3.12 | Framework : Django 5.2 | Base de données : SQLite → PostgreSQL | Frontend : HTML / CSS / Bootstrap 5 | Authentification : django-allauth | PDF : WeasyPrint | DevOps : Git / GitHub
+                </p>
+                <button onclick="showVideo()">Voir captures - Réservation Vétérinaire</button>
+                <video id="vet-video" src="assets/video_vet.mp4" controls style="display: none;"></video>
+            </div>
+
+            <!-- Projet 2 : PharmaInsight -->
+            <div class="project">
+                <h3>💊 PharmaInsight (Streamlit + Python)</h3>
+                <p>Tableau de bord analytique pour la parapharmacie Pharmavie :</p>
+                <ul>
+                    <li>Prévisions de ventes</li>
+                    <li>Recommandation de produits</li>
+                    <li>Détection automatique de ruptures de stock</li>
+                    <li>Identification des produits phares</li>
+                </ul>
+                <button onclick="showImages()">Voir captures - PharmaInsight</button>
+                <div id="pharma-images" style="display: none;">
+                    <img src="assets/bi/2.png" alt="Dashboard accueil">
+                    <img src="assets/bi/3.png" alt="Graphiques ventes">
+                    <img src="assets/bi/4.png" alt="Graphiques ventes">
+                    <img src="assets/bi/5.png" alt="Graphiques ventes">
+                    <img src="assets/bi/6.png" alt="Graphiques ventes">
+                    <img src="assets/bi/7.png" alt="Graphiques ventes">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>📬 Contact Professionnel</h2>
+            <p>📧 Email : jabloun.omaima5102000@gmail.com</p>
+            <p>💼 LinkedIn : <a href="https://www.linkedin.com/in/jabloune-oumayma-b064aa355/">LinkedIn</a></p>
+            <p>🐙 GitHub : <a href="https://github.com/jablounomaima">GitHub</a></p>
+        </section>
+
+        <!-- Télécharger CV -->
+        <section id="cv">
+            <h2>📄 Télécharger mon CV</h2>
+            <a href="assets/cv.pdf" download="CV_Oumaima.pdf" class="btn">Télécharger mon CV</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
